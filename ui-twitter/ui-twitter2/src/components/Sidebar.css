@@ -5,12 +5,16 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
 }
 
-.sidebar svg {
-  width: 2rem;
-  height: 2rem;
+.sidebar svg.active {
   color: var(--twitter-blue);
+}
+
+.sidebar a:hover {
+  color: var(--twitter-blue);
+  transition: .1s linear;
 }
 
 .sidebar .new-tweet {
@@ -54,3 +58,4 @@
   width: 2rem;
   height: 2rem;
 }
+

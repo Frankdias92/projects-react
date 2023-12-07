@@ -12,7 +12,7 @@ import {
 
 import './Sidebar.css'
 
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -20,13 +20,13 @@ export function Sidebar() {
   return (
     
     <aside className="sidebar">
-      <TwitterLogo size={32} weight="fill"/>
+      <TwitterLogo className="active" size={32} weight="fill"/>
     
       <nav className="main-navigation">
-        <Link className="active" to="/">
+        <NavLink  to="/">
          <House weight="fill"/>
          Home
-        </Link>
+        </NavLink>
     
         <a href="">
           <Hash />
