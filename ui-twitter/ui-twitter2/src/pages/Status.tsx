@@ -5,6 +5,7 @@ import { useState, FormEvent, KeyboardEvent } from 'react'
 
 
 import './Status.css'
+import { PaperPlaneRight } from '@phosphor-icons/react'
 
 
 export function Status() {
@@ -55,7 +56,10 @@ export function Status() {
 
           </label>
 
-          <button type="submit">Answer</button>
+          <button type="submit">
+            <PaperPlaneRight />
+            <span>Answer</span>
+          </button>
         </form>
 
 

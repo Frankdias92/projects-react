@@ -30,6 +30,12 @@
   border: 0;
 }
 
+.sidebar .new-tweet svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
+
 .sidebar .new-tweet:hover {
   filter: brightness(.9);
 }
@@ -59,3 +65,25 @@
   height: 2rem;
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 1.5rem .75rem;
+    align-items: center;
+  }
+
+  .main-navigation span {
+    display: none;
+  }
+
+  .sidebar .new-tweet {
+    width: auto;
+  }
+
+  .sidebar .new-tweet svg {
+    display: block;
+  }
+
+  .sidebar .new-tweet span {
+    display: none;
+  }
+}
